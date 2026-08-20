@@ -9,7 +9,7 @@
 
 namespace libhttp {
 
-  class LIBHHTP_API Request {
+  class LIBHTTP_API Request {
 
     public:
       Request() = default;

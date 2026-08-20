@@ -20,7 +20,7 @@ enum class Status : std::uint16_t {
   SwitchingProtocols                = 101, /* This code is sent in response to an Upgrade request header from the client and indicates the protocol the server is switching to.  */
   Processing                        = 102, /* This code was used in WebDAV contexts to indicate that a request has been received by the server, but no status was available at the time of the response. */
   EarlyHints                        = 103, /* This status code is primarily intended to be used with the Link header, letting the user agent start preloading resources while the server prepares a response or preconnect to an origin from which the page will need resources. */
-  
+
   // Successful responses
   OK                                = 200, /* The request succeeded. The result and meaning of "success" depends on the HTTP method: {GET, HEAD, PUT, POST, TRACE...}. */
   Created                           = 201, /* The request succeeded, and a new resource was created as a result. This is typically the response sent after POST requests, or some PUT requests. */
@@ -94,7 +94,7 @@ constexpr std::uint16_t status_code(Status status) noexcept {
   return static_cast<std::uint16_t>(status);
 }
 
-LIBHHTP_API std::string_view reason_phrase(Status status) noexcept 
+LIBHTTP_API std::string_view reason_phrase(Status status) noexcept 
 
 
 } // namespace libhttp

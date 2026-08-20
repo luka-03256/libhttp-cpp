@@ -5,7 +5,7 @@
 
 namespace libhttp {
 
-  class LIBHHTP_API Body {
+  class LIBHTTP_API Body {
     public:
       Body() = default;
 
